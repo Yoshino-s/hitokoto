@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:
+    image: hitokoto_api
+    container_name: hitokoto_api
+    hostname: hitokoto_api
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8000:8000
+    links: 
+      - redis
+    restart: unless-stopped
+    volumes: 
+      - ./web/data:/usr/src/app/data
+  redis:
+    image: redis
+    restart: unless-stopped
+    container_name: redis
+    hostname: redis
+    ports: 
+      - 6380:6379

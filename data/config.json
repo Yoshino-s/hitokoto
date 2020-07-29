@@ -1,0 +1,38 @@
+{
+    "name": "hitokoto-s",
+    "url": "https://hitokoto.yoshino-s.online",
+    "api_name": "hitokoto-s",
+    "server": {
+        "host": "127.0.0.1",
+        "port": "8000"
+    },
+    "mail": {
+        "type": "smtp",
+        "host": "",
+        "username": "",
+        "password": "",
+        "port": "",
+        "encrypt": "ssl"
+    },
+    "database": "mysql",
+    "mysql": {
+        "host": "127.0.0.1",
+        "database": "",
+        "username": "", 
+        "password": "",
+        "port": ""
+    },
+    "redis": {
+        "host": "127.0.0.1",
+        "port": 6379,
+        "password": "",
+        "database": 0
+    },
+    "sentences_ab_switchter": {
+        "a": 1,
+        "b": 2
+    },
+    "log_level": "info",
+    "remote_sentences_url": "https://cdn.jsdelivr.net/gh/yoshino-s/sentences-bundle@1.0.22/",
+    "compress_body": true
+}
